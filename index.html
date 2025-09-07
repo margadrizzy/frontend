@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>ONDO</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Header */
+    .header {
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+    .header img {
+      height: 75px;
+    }
+    .menu {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+
+
+    .banner img {
+        height: 550px;
+    }
+    .top-strip {
+      background-color: black;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .top-strip span {
+      background: #ff0080;
+      padding: 6px 12px;
+      border-radius: 4px;
+      margin-left: 10px;
+    }
+
+    /* Buttons grid */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 20px;
+    }
+    .grid-item {
+      background-color: #111;
+      border-radius: 8px;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .grid-item:hover {
+      background-color: #222;
+    }
+
+    /* Bottom bar */
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    .bottom-bar button {
+      background: #ff0080;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 25px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="https://media.licdn.com/dms/image/v2/C560BAQHM34OYmMRXrA/company-logo_200_200/company-logo_200_200/0/1647500859588/ondo_llc_logo?e=2147483647&v=beta&t=VGOsooaivqbgIDowdp9W2J7nsgLhb98U4s4Y8Xwbem0" alt="ONDO logo">
+    <div class="menu">☰</div>
+  </div>
+
+  <!-- Top Strip -->
+  <div class="top-strip">
+    Биет сим хүргэлттэй боллоо. Сим 5000 ₮ 
+    <span>Захиалах →</span>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner">
+    <img src="https://cdn.ondo.mn/strapi/ONDO_Call_66_minute_01_2_bfdcbcdcd4.png" alt="">
+
+  </div>
+
+  <!-- Grid buttons -->
+  <div class="grid">
+    <div class="grid-item">ONDO-д бүртгүүлэх</div>
+    <div class="grid-item">Сарын багц авах</div>
+    <div class="grid-item">Дата цэнэглэх</div>
+    <div class="grid-item">Төгрөгөөр цэнэглэх</div>
+    <div class="grid-item">Дугаар авах</div>
+    <div class="grid-item">Сим сэргээх</div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="bottom-bar">
+    <button>БҮРТГҮҮЛЭХ</button>
+  </div>
+
+</body>
+</html>
